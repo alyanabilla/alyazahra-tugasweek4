@@ -1,0 +1,32 @@
+1. membuat sebuah folder kosong dengan namamu sendiri 
+[ mkdir nabilla ]
+2. membuat sebuah file di dalam folder tersebut dengan nama README.md, isi file tersebut dengan kalimat "Halo perkenalkan aku halaman utama" 
+[touch README.md, echo -e "Halo perkenalkan aku halaman utama"]
+3. inisialisasi folder tersebut dengan Git, kemudian simpan perubahan menggunakan commit dengan pesan "First commit" 
+[git init, git commit -m "First Commit"]
+4. Ganti teks sebelumnya dengan "Hello world" 
+[nano README.md, mengganti teks, ctrl + x, enter]
+5.Tampilkan isi teks tersebut pada command line menggunakan command cat 
+[cat readme.md]
+6. Ternyata kamu tidak ingin perubahan tersebut, dan ingin kembali ke perubahan seperti commit yang terakhir. Lakukan teknik git backtracking untuk mengembalikan ke perubahan commit yang terakhir.
+[git checkout readme.md]
+7. buat branch baru dengan nama cv, hal ini berguna agar histori kita tidak tercampur
+[git branch cv]
+8. pindah branch ke dalam cv, kemudian buat file dengan nama cv.txt dan isi file tersebut dengan kalimat: "Ini adalah file CV" 
+[git checkout cv]
+9. kemudian simpan perubahan menggunakan commit dengan pesan "Initial CV"
+[git commit -m "Initial CV"]
+10. tambahkan 3 perusahaan yang akan kamu lamar, dan setiap menuliskan 1 nama perusahaan kamu harus melakukan dokumentasi dan menyimpan perubahan menggunakan commit 
+[ ~ echo -e "PT. Samsung Electronics Indonesia, git commit -m "menambahkan perusahaan pertama" 
+  ~ PT. Axioo Indonesia, git commit -m "menambahkan perusahaan kedua" 
+  ~ PT. tar Cosmos, git commit -m "menambahkan perusahaan ketiga" ]
+11. kembali ke branch master
+[git checkout main]
+12. ubah file README.md menjadi "Halo perkenalkan aku halaman utama" "Ini adalah update pertama pada branch master"
+[echo -e ]
+13. jangan lupa untuk menyimpan perubahan menggunakan commit dengan pesan "update master pertama"
+[git commit -m "update master pertama"]
+14. gabungkan branch cv ke dalam branch master menggunakan perintah git merge 
+[git merge cv]
+15. unggah Git Repository project tersebut tersebut ke dalam GitHub
+[ git remote add https://github.com/alyanabilla/alyazahra-tugasweek4 git push] git log --graph
